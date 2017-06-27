@@ -14,10 +14,15 @@ h1, h2, h3, h4, h5, h6 {
 
 p, figcaption {
   font-family: 'Lato', sans-serif;
+  font-size: 1.5vmax;
 }
 
 figure {
   margin: 0 0 0 0;
+}
+
+figcaption {
+  text-align: center;
 }
 
 h1 {
@@ -30,17 +35,25 @@ h1 {
 
 
 h2 {
-  font-size: 5vmax;
+  font-size: 3vmax;
   font-weight: 700;
-  /*line-height: 48px;*/
   margin: 0 0 24px;
   padding: 0 30px; }
 
 
 p { color: #111;
-  font-size: 2.5vmax;
-  /*line-height: 28px;*/
-  margin: 0 0 0; }
+  font-size: 1.5vmax;
+  line-height: 2vmax;
+  margin-top: 0.5vmax; }
+
+article, footer {
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(232, 229, 229, 0.31);
+}
 
 
 a { color: #990000; text-decoration: none; }
@@ -60,6 +73,10 @@ a:hover { text-decoration: underline }
     padding: 15px;
 }
 
+#thumbnails {
+  overflow: hidden;
+}
+
 .subtitle {
   font-size: 2vmax;
   vertical-align: bottom;
@@ -75,6 +92,7 @@ a:hover { text-decoration: underline }
 
 .hero-section {
   text-align: center;
+  padding: 15px;
 }
 
 .hero, .thumb-img {
@@ -88,17 +106,16 @@ a:hover { text-decoration: underline }
   width: 8vmax;
 }
 
-.hero-caption {
+.article-heading {
   text-align: center;
-  font-size: 1.5vmax;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -140%);
-  color: white;
 }
 
 .title {
   padding-right: 17vw;
+}
+
+.contact-us {
+  margin: auto;
 }
 
 /* Screen specific design.
@@ -136,7 +153,7 @@ a:hover { text-decoration: underline }
 
 /* 3. Desktops. we can add something for 1024px and up, but for now, this
     will do */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
