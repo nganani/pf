@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111;
+  font-family: "Bubbler One", sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p,
+figcaption {
+  font-family: "Lato", sans-serif;
+  font-size: 0.7rem;
+}
+
+figcaption,
+footer {
+  text-align: center;
+}
+
+header {
+  align-items: center;
+}
+
+/* Suggested extra headings by HTML checker for bot readability */
+.hidden {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+
+.logo {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.title {
+  flex: 9;
+  text-align: center;
+}
+
+/* Placing title at the top of the globe icon when side by side */
+.title h2 {
+  margin: 0;
+}
+/* Placing subtitle at the bottom of the globe icon when side by side */
+.title p {
+  margin: calc(100px - 3rem) 0 0 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 2400px;
+  padding: 0 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+
+[class*="cell"] {
+  margin: 1rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Medium width: */
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
+
+  /* Larger fonts from this width on */
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p,
+  figcaption {
+    font-size: 1rem;
+  }
+
+  /* Placing subtitle at the bottom of the globe icon when side by side */
+  .title p {
+    margin: calc(100px - 4.3rem) 0 0 0;
+  }
+}
+
+/* Large width: */
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(25% - 2rem);
+  }
+}
